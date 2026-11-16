@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px 16px;
+  background-color: #eeeeee;
+  color: #222222;
+  font-family: Arial, sans-serif;
+}
+
+.cartao-pokedex {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0 0 24px;
+  color: #d93636;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #d93636;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.resultado {
+  min-height: 48px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.mensagem {
+  margin: 0;
+  text-align: center;
+}
+
+.mensagem.erro {
+  color: #b42318;
+}
+
+.nome-pokemon {
+  margin: 0 0 16px;
+  color: #d93636;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.informacoes-pokemon {
+  margin: 0 0 20px;
+  padding-left: 24px;
+}
+
+.titulo-habilidades {
+  margin: 0 0 8px;
+}
+
+.habilidades {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.habilidades li {
+  text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  .cartao-pokedex {
+    padding: 24px 20px;
+  }
+}

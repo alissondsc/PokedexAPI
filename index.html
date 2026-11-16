@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pesquise informações sobre Pokémon usando a PokéAPI.">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+  <main class="cartao-pokedex">
+    <h1>Pokédex</h1>
+
+    <form id="formulario-pokemon">
+      <label for="nome-pokemon">Nome do Pokémon:</label>
+      <input
+        type="text"
+        id="nome-pokemon"
+        name="pokemon"
+        placeholder="Ex.: pikachu"
+        autocomplete="off"
+        required
+      >
+      <button type="submit">Buscar Pokémon</button>
+    </form>
+
+    <section id="resultado" class="resultado" aria-live="polite">
+      <p class="mensagem">Digite o nome de um Pokémon para começar.</p>
+    </section>
+  </main>
+</body>
+</html>
