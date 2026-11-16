@@ -3,6 +3,7 @@
 }
 
 body {
+  background: url("imagem/pikachu.jpg") no-repeat center center fixed;
   display: flex;
   justify-content: center;
   align-items: flex-start;
